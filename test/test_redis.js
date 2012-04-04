@@ -4,7 +4,7 @@ var redis = require('redis')
 
 describe("Redis", function() {
   it("Should connect to server pass by environment", function(done) {
-    var port = process.env.REDIS_PORT;
+    var port = parseInt(process.env.REDIS_PORT);
     var host = process.env.REDIS_HOST;
     var password = process.env.REDIS_PASSWORD;
 
