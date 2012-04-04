@@ -1,0 +1,15 @@
+{
+    "name": "strider-redis-test"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "redis": ">=0.7.1"
+  }
+  , "devDependencies": {
+      "mocha": ">=0.11.0"
+    , "should": ">=0.5.1"
+  }
+  , "scripts": {
+      "test": "mocha -R tap"
+  }
+}
