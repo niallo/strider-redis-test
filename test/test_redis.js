@@ -19,6 +19,7 @@ describe("Redis", function() {
 
       client.get(key, function(err, reply) {
         reply.toString().should.eql(value);
+        done();
       });
     });
   });
