@@ -8,6 +8,7 @@ describe("Redis", function() {
     var host = process.env.REDIS_HOST;
     var password = process.env.REDIS_PASSWORD;
 
+    console.log("host: %s port: %s password: %s", host, port, password);
     var client = redis.createClient(port, host);
 
     client.auth(password, function() {
